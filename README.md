@@ -1,6 +1,6 @@
 # Atividade: Somador de 4 Bits
 
-Neste projeto, vou mostrar um somador digital de 4 bits feito através da composição somadores completos de 1 bit. Com isso, será possível ver claramente como as operações são feitas corretamente, identificando quando acontece overflow e exibindo o resultado num display visual hexadecimal.
+Neste projeto, vou mostrar um somador digital de 4 bits feito através da composição de somadores completos de 1 bit. Com isso, será possível ver claramente como as operações são feitas corretamente, identificando quando acontece overflow e exibindo o resultado num display visual hexadecimal.
 
 [Neste link](https://drive.google.com/drive/folders/1DxL5mLJzmOeSz1N4lS8tXcmy2-7_gi5z), será possível acessar o vídeo explicativo sobre o desenvolvimento e funcionamento somador de 4 bits.
 
@@ -77,7 +77,10 @@ O overflow acontece quando a soma é maior que a capacidade dos 4 bits disponív
     <img src="img/overflow.png" alt="Overflow">
 </p>
 
-No exemplo acima, é possível ver que tínhamos como valores, em hexadecimal: A_1 = 2¹; A_2 = 2²; B_2 = 2²; A_3 = 2³; B_3 = 2³.
+No exemplo acima, é possível ver que tínhamos como valores, em hexadecimal: 
+- A_1 = 2¹;
+- A_2 = 2²; B_2 = 2²; 
+- A_3 = 2³; B_3 = 2³.
 
 Com isso, temos a soma: 2 + 4 + 4 + 8 + 8 = 26. No entanto, como um somador de 4 bits só é capaz de armazenar valores que correspondem a até 1111, ou seja, 15, quando esse valor é ultrapassado, ocorre o overflow. Nesse sentido, o overflow da figura "consome" 16 bits, e o restante é a soma que sobra, ou seja, 26 - 16 = 10, o que corresponde a A no sistema hexadecimal, resultado que é possível visualizar na figura.
 
